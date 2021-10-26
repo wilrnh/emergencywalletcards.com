@@ -1346,7 +1346,7 @@ export default function GetStarted() {
                 </AccordionItem>
               </Accordion>
               
-              <button type="submit" disabled={ isSubmitting } className="border-4 rounded-lg border-red-400 bg-white p-1 text-black font-bold" >Gimme my EWC</button>
+              <button type="submit" disabled={ isSubmitting } className="border-4 rounded-lg border-red-400 bg-white p-1 text-black font-bold" >Print My Emergency Wallet Card</button>
 
             </Form>
           )}
