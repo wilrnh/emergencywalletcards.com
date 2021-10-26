@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "deploy": "next build && next export",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "formik": "^2.2.9",
+    "jspdf": "^2.3.1",
+    "next": "latest",
+    "react": "^17.0.2",
+    "react-accessible-accordion": "^4.0.0",
+    "react-dom": "^17.0.2",
+    "yup": "^0.32.9"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "eslint": "^7.32.0",
+    "eslint-config-next": "^11.0.1",
+    "netlify-plugin-cache-nextjs": "^1.6.1",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.2.4"
+  }
+}
