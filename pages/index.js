@@ -34,20 +34,25 @@ export default function Home() {
         </Link>
         <p className="mt-3 text-lg">Be ready before the next emergency</p>
         <div className="flex flex-wrap">
-          <div className="max-w-xs"><img src="https://res.cloudinary.com/wilrnh/image/upload/v1634513185/emergencywalletcards.com/ewc-homepage-sample-card_asexhk.png" alt="Emergency Wallet Cards Example"/></div>
-          <div className="w-64 m-auto">
-            <p className="p-6"><span className="font-bold">Easily print a card</span> with important information that you can <span className="font-bold">cut out and fold</span> for safe-keeping in your wallet or purse, <span className="font-bold">ready the moment you need it</span>.</p>
-            <ul className="p-6 text-left space-y-4">
-              <li>&#10003;<span className="border-b-2 border-red-400">Privacy first:</span> Absolutely NONE of your information ever leaves your browser</li>
-              <li>&#10003;<span className="border-b-2 border-red-400">Transparent:</span> Entire app is free and <a className="underline text-blue-500" href="https://github.com/wilrnh/emergencywalletcards.com">open-source</a></li>
-              <li>&#10003;<span className="border-b-2 border-red-400">Respectful:</span> No ads ever</li>
-              <li>&#10003;<span className="border-b-2 border-red-400">Flexible:</span> Print as much, or as little information as you like</li>
+          <div className="max-w-xs my-8"><img src="https://res.cloudinary.com/wilrnh/image/upload/v1634513185/emergencywalletcards.com/ewc-homepage-sample-card_asexhk.png" alt="Emergency Wallet Cards Example"/></div>
+          <div className="w-64 m-auto py-2 bg-red-500 rounded-2xl text-white">
+            <p className="p-4"><span className="font-bold">Easily print a card</span> with important information that you can <span className="font-bold">cut out and fold</span> for safe-keeping in your wallet or purse, <span className="font-bold">ready the moment you need it</span>.</p>
+            <ul className="px-2 text-left">
+              <li>&#10003; Critical information for <span className="font-bold">First Responders</span> as soon as they arrive</li>
+              <li>&#10003; Have an <span className="font-bold">emergency plan</span> on hand 24/7</li>
+              <li>&#10003; Phone numbers and other <span className="font-bold">contact information available</span> even when your phone is dead</li>
             </ul>
             <Link href="/getstarted">
-              <button className="border-4 rounded-lg border-red-400 bg-white p-1 text-black font-bold">Get Started Now!</button>
+              <button className="border-4 rounded-lg border-red-400 bg-white p-2 text-black font-bold">Get Started Now!</button>
             </Link>
           </div>
         </div>
+        <ul className="p-6 text-left space-y-4">
+              <li><span className="border-b-2 border-red-400">Privacy first:</span> Absolutely NONE of your information ever leaves your browser</li>
+              <li><span className="border-b-2 border-red-400">Transparent:</span> Entire app is FREE and <a className="underline text-blue-500" href="https://github.com/wilrnh/emergencywalletcards.com">open-source</a></li>
+              <li><span className="border-b-2 border-red-400">Respectful:</span> No ads EVER</li>
+              <li><span className="border-b-2 border-red-400">Flexible:</span> Print as much, or as little information as you like</li>
+            </ul>
       </main>
 
       <footer className="flex items-center justify-center w-full h-24 border-t">
