@@ -35,10 +35,10 @@ export default function Home() {
         <p className="mt-3 text-lg">Be ready before the next emergency</p>
         <div className="flex flex-wrap">
           <div className="max-w-xs my-8"><img src="https://res.cloudinary.com/wilrnh/image/upload/v1634513185/emergencywalletcards.com/ewc-homepage-sample-card_asexhk.png" alt="Emergency Wallet Cards Example"/></div>
-          <div className="w-64 m-auto py-2 bg-red-500 rounded-2xl text-white">
-            <p className="p-4"><span className="font-bold">Easily print a card</span> with important information that you can <span className="font-bold">cut out and fold</span> for safe-keeping in your wallet or purse, <span className="font-bold">ready the moment you need it</span>.</p>
-            <ul className="px-2 text-left">
-              <li>&#10003; Critical information for <span className="font-bold">First Responders</span> as soon as they arrive</li>
+          <div className="w-64 m-auto py-2 border-8 border-red-500 rounded-2xl">
+            <p className="p-3 text-justify"><span className="font-bold">Easily print a card</span> with important information that you can <span className="font-bold">cut out and fold</span> for safe-keeping in your wallet or purse, <span className="font-bold">ready the moment you need it</span>.</p>
+            <ul className="px-2 text-left space-y-0.5">
+              <li>&#10003; Provide critical information for <span className="font-bold">First Responders</span> as soon as they arrive</li>
               <li>&#10003; Have an <span className="font-bold">emergency plan</span> on hand 24/7</li>
               <li>&#10003; Phone numbers and other <span className="font-bold">contact information available</span> even when your phone is dead</li>
             </ul>
