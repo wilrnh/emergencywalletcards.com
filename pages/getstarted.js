@@ -260,7 +260,7 @@ export default function GetStarted() {
             doc.setFont("Times");
             doc.setFontSize(6)
             // add cut and fold instructions
-            doc.addImage(ewc_fold_example_png, 'PNG', 5, 14, 53, 41)
+            doc.addImage(ewc_fold_example_png, 'PNG', 5, 14, 46, 36)
             doc.text("<FOLD HERE>",44,60)
             doc.text("<FOLD HERE>",44,110)
             doc.text("<FOLD HERE>",44,160)
