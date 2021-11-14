@@ -2,7 +2,7 @@
 name: Feature request
 about: Suggest a feature for emergencywalletcards.com
 title: ''
-labels: feature request
+labels: type:enhancement
 assignees: @wilrnh
 
 ---
