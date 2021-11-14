@@ -265,7 +265,7 @@ export default function GetStarted() {
             doc.text("FOLD ALONG THE INNER BORDER",5,58)
             doc.text("FEEL FREE TO ADD MORE INFO ON THE BACK!",5,65)
             doc.text("TELL US HOW WE CAN IMPROVE THIS CARD AT:",5,68)
-            doc.text("https://github.com/wilrnh/emergencywalletcards.com/issues",5,71)
+            doc.text("https://emergencywalletcards.com/issues",5,71)
             doc.addImage(ewc_scissors_png, 'PNG', 100, 5, 6, 4)
             doc.addImage(ewc_scissors_png, 'PNG', 100, 262, 6, 4)
             doc.text("<FOLD HERE>",44,60)
