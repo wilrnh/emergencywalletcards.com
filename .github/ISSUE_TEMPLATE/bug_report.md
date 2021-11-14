@@ -2,7 +2,7 @@
 name: Bug report
 about: Create a report to help emergencywalletcards.com improve
 title: ''
-labels: bug
+labels: type:bug
 assignees: @wilrnh
 
 ---
