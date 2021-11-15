@@ -4,3 +4,7 @@
 
 [[plugins]]
 package = "netlify-plugin-cache-nextjs"
+
+[[redirects]]
+  from = "/issues"
+  to = "https://github.com/wilrnh/emergencywalletcards.com/issues"
