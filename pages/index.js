@@ -34,7 +34,7 @@ export default function Home() {
         </Link>
         <p className="mt-3 text-lg">Be ready before the next emergency</p>
         <div className="flex flex-wrap">
-          <div className="max-w-xs my-8"><img src="https://res.cloudinary.com/wilrnh/image/upload/v1634513185/emergencywalletcards.com/ewc-homepage-sample-card_asexhk.png" alt="Emergency Wallet Cards Example"/></div>
+          <div className="max-w-xs my-8 px-2"><img src="https://res.cloudinary.com/wilrnh/image/upload/v1639416599/emergencywalletcards.com/ewc_sample_full_yenm4l.png" alt="Emergency Wallet Cards Example"/></div>
           <div className="w-64 m-auto py-2 border-8 border-red-500 rounded-2xl">
             <p className="p-3 text-justify"><span className="font-bold">Easily print a card</span> with important information that you can <span className="font-bold">cut out and fold</span> for safe-keeping in your wallet or purse, <span className="font-bold">ready the moment you need it</span>.</p>
             <ul className="px-2 text-left space-y-0.5">
