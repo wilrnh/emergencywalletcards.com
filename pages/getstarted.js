@@ -11,10 +11,10 @@ const formSchema = Yup.object().shape({
   dob: Yup.string().matches(/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/, 'Must be YYYY-MM-DD'),
   address1: Yup.string().max(36, 'Must be less than 36 characters long.'),
   address1State: Yup.string().length(2, 'Must be 2-letter State abbreviation'),
-  address1Zip: Yup.string().length(5, 'Must be 5-digit ZIP code'),
+  address1Zip: Yup.string(),
   address2: Yup.string().max(36, 'Must be less than 36 characters long.'),
   address2State: Yup.string().length(2, 'Must be 2-letter State abbreviation'),
-  address2Zip: Yup.string().length(5, 'Must be 5-digit ZIP code'),
+  address2Zip: Yup.string(),
   homePhone: Yup.string().max(24, 'Must be less than 24 characters long.'),
   cellPhone: Yup.string().max(24, 'Must be less than 24 characters long.'),
   email: Yup.string().max(34, 'Must be less than 34 characters long.'),
@@ -26,7 +26,7 @@ const formSchema = Yup.object().shape({
   businessName: Yup.string().max(64, 'Must be less than 64 characters long.'),
   businessAddress: Yup.string().max(36, 'Must be less than 36 characters long.'),
   businessAddressState: Yup.string().length(2, 'Must be 2-letter State abbreviation'),
-  businessAddressZip: Yup.string().length(5, 'Must be 5-digit ZIP code'),
+  businessAddressZip: Yup.string(),
   officePhone: Yup.string().max(66, 'Must be less than 66 characters long.'),
   workPointOfContact1: Yup.string().max(80, 'Must be less than 80 characters long.'),
   workPointOfContact2: Yup.string().max(80, 'Must be less than 80 characters long.'),
@@ -61,19 +61,19 @@ const formSchema = Yup.object().shape({
   neighborhoodEmergencyMeetingPlaceName: Yup.string().max(72, 'Must be less than 72 characters long.'),
   neighborhoodEmergencyMeetingPlaceAddress: Yup.string().max(28, 'Must be less than 28 characters long.'),
   neighborhoodEmergencyMeetingPlaceState: Yup.string().length(2, 'Must be 2-letter State abbreviation'),
-  neighborhoodEmergencyMeetingPlaceZip: Yup.string().length(5, 'Must be 5-digit ZIP code'),
+  neighborhoodEmergencyMeetingPlaceZip: Yup.string(),
   neighborhoodEmergencyMeetingPlacePhone: Yup.string().max(14, 'Must be less than 14 characters long.'),
   neighborhoodEmergencyMeetingPlaceInstructions: Yup.string().max(44, 'Must be less than 44 characters long.'),
   outOfNeighborhoodEmergencyMeetingPlaceName: Yup.string().max(72, 'Must be less than 72 characters long.'),
   outOfNeighborhoodEmergencyMeetingPlaceAddress: Yup.string().max(28, 'Must be less than 28 characters long.'),
   outOfNeighborhoodEmergencyMeetingPlaceState: Yup.string().length(2, 'Must be 2-letter State abbreviation'),
-  outOfNeighborhoodEmergencyMeetingPlaceZip: Yup.string().length(5, 'Must be 5-digit ZIP code'),
+  outOfNeighborhoodEmergencyMeetingPlaceZip: Yup.string(),
   outOfNeighborhoodEmergencyMeetingPlacePhone: Yup.string().max(14, 'Must be less than 14 characters long.'),
   outOfNeighborhoodEmergencyMeetingPlaceInstructions: Yup.string().max(44, 'Must be less than 44 characters long.'),
   outOfTownEmergencyMeetingPlaceName: Yup.string().max(72, 'Must be less than 72 characters long.'),
   outOfTownEmergencyMeetingPlaceAddress: Yup.string().max(28, 'Must be less than 28 characters long.'),
   outOfTownEmergencyMeetingPlaceState: Yup.string().length(2, 'Must be 2-letter State abbreviation'),
-  outOfTownEmergencyMeetingPlaceZip: Yup.string().length(5, 'Must be 5-digit ZIP code'),
+  outOfTownEmergencyMeetingPlaceZip: Yup.string(),
   outOfTownEmergencyMeetingPlacePhone: Yup.string().max(14, 'Must be less than 14 characters long.'),
   outOfTownEmergencyMeetingPlaceInstructions: Yup.string().max(44, 'Must be less than 44 characters long.'),
   importantNumbers1Name: Yup.string().max(30, 'Must be less than 30 characters long.'),
@@ -738,7 +738,7 @@ export default function GetStarted() {
                       </div>
                       <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
                         <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="address1Zip">
-                          ZIP
+                          ZIP / Postal Code
                         </label>
                         <Field type="text" name="address1Zip" id="address1Zip" className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" />
                         <ErrorMessage className="text-red-500 text-xs italic" name="address1Zip" component="div"/>
@@ -763,7 +763,7 @@ export default function GetStarted() {
                       </div>
                       <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
                         <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="address2Zip">
-                          ZIP
+                          ZIP / Postal Code
                         </label>
                         <Field type="text" name="address2Zip" id="address2Zip" className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" />
                         <ErrorMessage className="text-red-500 text-xs italic" name="address2Zip" component="div"/>
@@ -865,7 +865,7 @@ export default function GetStarted() {
                       </div>
                       <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
                         <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="businessAddressZip">
-                          ZIP
+                          ZIP / Postal Code
                         </label>
                         <Field type="text" name="businessAddressZip" id="businessAddressZip" className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" />
                         <ErrorMessage className="text-red-500 text-xs italic" name="businessAddressZip" component="div"/>
@@ -1172,7 +1172,7 @@ export default function GetStarted() {
                       </div>
                       <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
                         <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="neighborhoodEmergencyMeetingPlaceZip">
-                          ZIP
+                          ZIP / Postal Code
                         </label>
                         <Field type="text" name="neighborhoodEmergencyMeetingPlaceZip" id="neighborhoodEmergencyMeetingPlaceZip" className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" />
                         <ErrorMessage className="text-red-500 text-xs italic" name="neighborhoodEmergencyMeetingPlaceZip" component="div"/>
@@ -1231,7 +1231,7 @@ export default function GetStarted() {
                       </div>
                       <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
                         <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="outOfNeighborhoodEmergencyMeetingPlaceZip">
-                          ZIP
+                          ZIP / Postal Code
                         </label>
                         <Field type="text" name="outOfNeighborhoodEmergencyMeetingPlaceZip" id="outOfNeighborhoodEmergencyMeetingPlaceZip" className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" />
                         <ErrorMessage className="text-red-500 text-xs italic" name="outOfNeighborhoodEmergencyMeetingPlaceZip" component="div"/>
@@ -1290,7 +1290,7 @@ export default function GetStarted() {
                       </div>
                       <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
                         <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="outOfTownEmergencyMeetingPlaceZip">
-                          ZIP
+                          ZIP / Postal Code
                         </label>
                         <Field type="text" name="outOfTownEmergencyMeetingPlaceZip" id="outOfTownEmergencyMeetingPlaceZip" className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" />
                         <ErrorMessage className="text-red-500 text-xs italic" name="outOfTownEmergencyMeetingPlaceZip" component="div"/>
